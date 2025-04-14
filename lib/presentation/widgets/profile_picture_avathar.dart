@@ -23,7 +23,7 @@ class ProfilePictureAvathar extends StatelessWidget {
   Widget build(BuildContext context) {
     final Widget circleAvathar = CircleAvatar(
       backgroundImage: AssetImage(path),
-      radius: 20,
+      radius: radius,
     );
     return border
         ? CircleAvatar(

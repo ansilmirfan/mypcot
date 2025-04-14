@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:mypcot/presentation/widgets/elevated_icon.dart';
 import 'package:mypcot/presentation/widgets/gap.dart';
+import 'package:mypcot/presentation/widgets/profile_picture_avathar.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -15,7 +16,19 @@ class Home extends StatelessWidget {
             ElevatedIcon(path: 'assets/icons/filter_icon.svg'),
           ],
         ),
-        actions: [ElevatedIcon(path: 'asstes/icons/')],
+        actions: [
+          ElevatedIcon(path: 'assets/icons/favourite_icon.svg'),
+          Gap.width(gap: 25),
+          ElevatedIcon(
+            path: 'assets/icons/bell_icon.svg',
+            badge: true,
+            size: 18,
+            padding: 9,
+          ),
+          Gap.width(gap: 25),
+          ProfilePictureAvathar(path: 'assets/images/oreo.jpg', radius: 16),
+          Gap.width(gap: 20),
+        ],
       ),
     );
   }
