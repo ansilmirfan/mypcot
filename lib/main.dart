@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:mypcot/presentation/screens/bottom_nav_bar.dart';
+import 'package:mypcot/presentation/theme/app_theme.dart';
 
 void main() {
   runApp(const MyApp());
@@ -10,6 +11,10 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false,home:BottomNavBar() ,);
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: BottomNavBar(),
+      theme: AppTheme.themeData,
+    );
   }
 }
