@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'package:mypcot/presentation/other/center_docked_container.dart';
+import 'package:mypcot/presentation/screens/home.dart';
 import 'package:mypcot/presentation/widgets/bottom_nav_item.dart';
 
 class BottomNavBar extends StatefulWidget {
@@ -20,7 +21,7 @@ List<String> paths = [
 List<String> labels = ['Home', 'Customers', '', 'Khata', 'Orders'];
 int selectedIndex = 0;
 List<Widget> body = [
-  Container(),
+  Home(),
   Container(),
   Container(),
   Container(),
