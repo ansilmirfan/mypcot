@@ -13,20 +13,29 @@ class ElevatedIcon extends StatelessWidget {
     return Stack(
       alignment: Alignment.center,
       children: [
-        Material(
-          elevation: 4,
-          shape: const CircleBorder(),
-          color: AppColors.white,
-          child: SvgPicture.asset(path, height: size),
+        Container(
+          width: size,
+          height: size,
+          decoration: BoxDecoration(
+            color: AppColors.white,
+            shape: BoxShape.circle,
+            boxShadow: [
+              BoxShadow(
+                color: Colors.grey.withValues(alpha: 0.15),
+                blurRadius: 5,
+                spreadRadius: 5,
+                offset: Offset(0, 3),
+              ),
+            ],
+          ),
+          child: SvgPicture.asset(path, height: size, width: size),
         ),
         Material(
           type: MaterialType.transparency,
-
           shape: const CircleBorder(),
           child: InkWell(
-            customBorder: CircleBorder(),
+            customBorder: const CircleBorder(),
             onTap: () {},
-
             child: SizedBox(width: size, height: size),
           ),
         ),

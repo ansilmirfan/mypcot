@@ -7,13 +7,13 @@ class AppTheme {
     scaffoldBackgroundColor: Colors.white,
     primaryColor: AppColors.navyBlue,
     appBarTheme: AppBarTheme(
-      backgroundColor: Colors.white,
+      backgroundColor: const Color.fromARGB(255, 255, 255, 255),
       elevation: 0,
       iconTheme: IconThemeData(color: AppColors.navyBlue),
       titleTextStyle: TextStyle(
         fontFamily: 'Roboto',
         color: AppColors.navyBlue,
-  
+
         fontWeight: FontWeight.w600,
       ),
     ),
