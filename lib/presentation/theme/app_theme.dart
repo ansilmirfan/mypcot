@@ -13,7 +13,7 @@ class AppTheme {
       titleTextStyle: TextStyle(
         fontFamily: 'Roboto',
         color: AppColors.navyBlue,
-        fontSize: 20,
+  
         fontWeight: FontWeight.w600,
       ),
     ),
