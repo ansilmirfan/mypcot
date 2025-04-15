@@ -27,7 +27,7 @@ class ElevatedIcon extends StatelessWidget {
             color: Colors.grey.withValues(alpha: 0.15),
             blurRadius: 5,
             spreadRadius: 5,
-            offset: Offset(0, 3),
+           
           ),
         ],
       ),

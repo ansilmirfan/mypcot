@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mypcot/presentation/widgets/date_filter_row.dart';
 
 import 'package:mypcot/presentation/widgets/elevated_icon.dart';
 import 'package:mypcot/presentation/widgets/gap.dart';
@@ -17,7 +18,11 @@ class Home extends StatelessWidget {
         physics: AlwaysScrollableScrollPhysics(),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
-          children: [const ProfileGreetingCard(), const QuickHighlightList()],
+          children: [
+            const ProfileGreetingCard(),
+            const QuickHighlightList(),
+            DateFilterRow(),
+          ],
         ),
       ),
     );

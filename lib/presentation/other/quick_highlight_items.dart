@@ -10,7 +10,7 @@ class QuickHighlightItems {
   static TextStyle thinTextStyle = TextStyle(
     color: Colors.white,
     fontSize: 15,
-    fontWeight: FontWeight.w300,
+    fontWeight: FontWeight.w400,
   );
   static TextStyle boldTextStyleBlack = TextStyle(
     fontWeight: FontWeight.w700,
@@ -25,7 +25,7 @@ class QuickHighlightItems {
   static TextStyle thinTextStyleBlackSmall = TextStyle(
     color: Colors.black,
     fontSize: 13,
-    fontWeight: FontWeight.w300,
+    fontWeight: FontWeight.w400,
   );
 
   static List<Color> highlightCardColor = [
@@ -159,7 +159,7 @@ class QuickHighlightItems {
   static List<EdgeInsets> middlePadding = [
     EdgeInsets.only(top: 5, bottom: 20, left: 5, right: 5),
     EdgeInsets.only(top: 10, bottom: 30, left: 5, right: 5),
-    EdgeInsets.only(top: 15, left: 5, right: 5,bottom: 5),
+    EdgeInsets.only(top: 15, left: 5, right: 5, bottom: 5),
   ];
   static List<EdgeInsets> bottomPadding = [
     EdgeInsets.all(0),
