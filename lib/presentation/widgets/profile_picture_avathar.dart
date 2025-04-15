@@ -5,12 +5,14 @@ class ProfilePictureAvathar extends StatelessWidget {
   final String path;
   final double radius;
   final bool border;
+  final Color borderColor;
 
   const ProfilePictureAvathar({
     super.key,
     required this.path,
     this.radius = 20,
     this.border = false,
+    this.borderColor = AppColors.coralOrange,
   });
   factory ProfilePictureAvathar.bordered({
     required String path,
@@ -27,8 +29,8 @@ class ProfilePictureAvathar extends StatelessWidget {
     );
     return border
         ? CircleAvatar(
-          backgroundColor: AppColors.coralOrange,
-          radius: radius + 1,
+          backgroundColor: borderColor,
+          radius: radius + 2,
           child: circleAvathar,
         )
         : circleAvathar;

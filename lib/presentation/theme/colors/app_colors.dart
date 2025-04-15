@@ -10,6 +10,7 @@ class AppColors {
   static const Color royalBlue = Color(0xFF234DDC); // #234DDC
   static const Color rosePink = Color(0xFFCE316A); // #CE316A
   static const Color coralOrange = Color(0xFFFE804C); // #FE804C
+  static const Color lightPink = Color(0xFFFBE9E9);
   static Color white = Colors.white;
   static Color grey = Colors.grey;
   static Color black = Colors.black;
