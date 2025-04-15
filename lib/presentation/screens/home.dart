@@ -6,6 +6,7 @@ import 'package:mypcot/presentation/widgets/gap.dart';
 import 'package:mypcot/presentation/widgets/profile_greeting_card.dart';
 import 'package:mypcot/presentation/widgets/profile_picture_avathar.dart';
 import 'package:mypcot/presentation/widgets/quick_highlight_list.dart';
+import 'package:mypcot/presentation/widgets/week_calender.dart';
 
 class Home extends StatelessWidget {
   const Home({super.key});
@@ -20,8 +21,12 @@ class Home extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             const ProfileGreetingCard(),
+            Gap(gap: 10),
             const QuickHighlightList(),
+            Gap(gap: 10),
             DateFilterRow(),
+            Gap(gap: 10),
+            WeekCalendar(),
           ],
         ),
       ),
