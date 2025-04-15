@@ -3,6 +3,7 @@ import 'package:mypcot/presentation/widgets/date_filter_row.dart';
 
 import 'package:mypcot/presentation/widgets/elevated_icon.dart';
 import 'package:mypcot/presentation/widgets/gap.dart';
+import 'package:mypcot/presentation/widgets/new_order_widget.dart';
 import 'package:mypcot/presentation/widgets/profile_greeting_card.dart';
 import 'package:mypcot/presentation/widgets/profile_picture_avathar.dart';
 import 'package:mypcot/presentation/widgets/quick_highlight_list.dart';
@@ -27,6 +28,9 @@ class Home extends StatelessWidget {
             DateFilterRow(),
             Gap(gap: 10),
             WeekCalendar(),
+            Gap(gap: 20),
+            NewOrderWidget(),
+            Gap(gap: 30),
           ],
         ),
       ),
