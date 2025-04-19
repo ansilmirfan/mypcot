@@ -2,6 +2,11 @@ import 'package:flutter/material.dart';
 import 'package:mypcot/presentation/theme/colors/app_colors.dart';
 
 class QuickHighlightItems {
+  static ValueNotifier<int> count = ValueNotifier(3);
+  static void increase() {
+   count.value++;
+  }
+
   static TextStyle boldTextStyle = TextStyle(
     fontWeight: FontWeight.w400,
     fontSize: 20,
@@ -55,7 +60,7 @@ class QuickHighlightItems {
         text: 'You have',
         style: thinTextStyle,
         children: [
-          TextSpan(text: ' 3 ', style: boldTextStyle),
+          TextSpan(text: ' ${count.value} ', style: boldTextStyle),
           TextSpan(text: 'active orders from'),
         ],
       ),
